@@ -6,8 +6,13 @@ public class Chess {
     //todo:change array index
     Chessman[][] chessmen = new Chessman[9][10];
 
+    void remove(int X, int Y) {
+        chessmen[X][Y] = null;
+    }
+
     void domove(MoveAction move) {
-        chessmen[0][0] = chessmen[0][1];
+        chessmen[move.newX][move.newY] = chessmen[move.oldX][move.oldY];
+        remove(move.oldX, move.oldY);
         //todo: to implement the business logic
     }
 }
