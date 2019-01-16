@@ -12,9 +12,10 @@ public class MainController {
 
     @Autowired
     CalculateService calculateService;
+
     @PostMapping(value = "/index")
     public MoveAction enter(String move) {
-        MoveAction moveAction=MoveAction.parse(move);
+        MoveAction moveAction = MoveAction.parse(move);
         return calculateService.calculate(moveAction);
     }
 }

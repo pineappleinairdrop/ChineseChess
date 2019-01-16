@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class CalculateService {
-    public MoveAction calculate(MoveAction moveAction){
+    public MoveAction calculate(MoveAction moveAction) {
 
         return null;
     }
