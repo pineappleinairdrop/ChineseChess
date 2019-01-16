@@ -1,14 +1,15 @@
-package org.hxl.chess;
+package org.hxl.chess.chessman;
 
 public class Shi extends Chessman {
-    Shi(boolean side,String name,int X,int Y){
+    Shi(boolean side,int X,int Y){
         this.side=side;
-        this.name=name;
+        this.name="士";
         this.positionX=X;
         this.positionY=Y;
     }
+
     @Override
-    boolean canMove() {
-        return false;
+    void next() {
+
     }
 }
